@@ -1,0 +1,95 @@
+.page { --paper: #faf8fc; --ink: #21192b; --violet: #8657d8; --lilac: #b779e2; --line: rgba(57,35,79,.15); position: relative; z-index: 1; overflow: hidden; background: var(--paper); color: var(--ink); font: 14px/1.75 var(--font-inter, 'Inter', sans-serif); }
+.page * { box-sizing: border-box; }
+.page h1, .page h2, .page h3, .page p { margin: 0; }
+.page a { color: inherit; text-decoration: none; }
+.page a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.page :is(a,button):focus-visible { outline: 2px solid #6039ad; outline-offset: 4px; }
+.skipLink { position: absolute; z-index: 10; top: 10px; left: 20px; padding: 12px; background: var(--paper); transform: translateY(-200%); }
+.skipLink:focus { transform: none; }
+.header { border-bottom: 1px solid var(--line); }
+.headerInner { max-width: 1184px; min-height: 88px; margin: auto; padding: 20px; display: flex; align-items: center; gap: 22px; }
+.logo { display: inline-flex; width: 136px; min-height: 44px; align-items: center; flex-shrink: 0; }
+.logo img { width: 100%; height: auto; }
+.headerLabel, .headerLinks { font-size: 11px; }
+.headerLabel { border-left: 1px solid var(--line); padding-left: 20px; }
+.headerLinks { margin-left: auto; }
+.headerLinks a { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; }
+.main { max-width: 1184px; margin-inline: auto; padding-inline: 20px; }
+.hero { display: grid; gap: 30px; align-items: center; padding: 42px 20px; margin-inline: -20px; background: #f0e9fa; }
+.heroCopy { max-width: 650px; }
+.eyebrow { display: flex; align-items: center; gap: 9px; color: #593695; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.eyebrow > span { width: 6px; height: 6px; flex: 0 0 6px; border-radius: 50%; background: var(--violet); }
+.hero h1 { margin-top: 25px; font: 400 clamp(48px,6.2vw,76px)/1.1 var(--font-inter, 'Inter', sans-serif); letter-spacing: -0.025em; }
+.hero h1 em, .closing h2 em { color: #7043bc; font-style: normal; }
+.heroCopy > p:not(.eyebrow) { max-width: 510px; margin-top: 19px !important; color: #51465d; font-size: 13px; line-height: 1.9; }
+.heroLink { display: inline-flex; min-height: 44px; align-items: center; gap: 9px; margin-top: 14px; color: #523188 !important; font-size: 11px; font-weight: 700; }
+.logoStage { position: relative; padding: 20px; border: 1px solid rgba(85,57,119,.14); border-radius: 10px; background: rgba(255,255,255,.5); }
+.stageLabel, .stageCaption { display: flex; justify-content: space-between; color: #74677f; font-size: 8px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.logoCard { display: grid; min-height: 140px; place-items: center; margin-block: 18px; padding: 20px 12px; border: 1px solid rgba(57,35,79,.08); border-radius: 7px; background: white; }
+.logoCard img { display: block; width: 100%; max-width: 440px; height: auto; }
+.stageCaption { letter-spacing: .02em; text-transform: none; }
+.stageCaption span:first-child { color: var(--ink); font-size: 10px; font-weight: 700; }
+.brandIdea { display: grid; gap: 18px; padding-block: 54px; border-bottom: 1px solid var(--line); }
+.sectionLabel { color: #593695; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.brandIdea h2 { max-width: 650px; font: 600 clamp(34px,4.2vw,52px)/1.15 var(--font-inter, 'Inter', sans-serif); letter-spacing: -.02em; }
+.brandIdea p:not(:first-child) { max-width: 690px; margin-top: 16px !important; color: #5d5365; font-size: 12px; line-height: 1.9; }
+.nameSection { display: grid; gap: 26px; padding-block: 52px 60px; }
+.sectionHeading h2, .identityHead h2, .valuesSection h2 { margin-top: 12px; font: 400 clamp(38px,5.4vw,56px)/1.04 var(--font-inter, 'Inter', sans-serif); letter-spacing: -.025em; }
+.sectionHeading > p:not(.eyebrow) { max-width: 360px; margin-top: 12px !important; color: #5d5365; font-size: 12px; }
+.nameGrid { display: grid; gap: 10px; }
+.nameCard { padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.nameIcon { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 8px; background: #eee6f8; color: #7043bc; }
+.nameCard h3 { margin-top: 19px; font: 400 30px/1.15 var(--font-inter, 'Inter', sans-serif); }
+.nameCard p { max-width: 320px; margin-top: 7px !important; color: #5d5365; font-size: 11px; line-height: 1.8; }
+.identity { display: grid; gap: 28px; padding: 26px 0 58px; border-top: 1px solid var(--line); }
+.identityHead > p:not(.eyebrow) { max-width: 420px; margin-top: 13px !important; color: #5d5365; font-size: 12px; line-height: 1.8; }
+.identityVisual { display: grid; gap: 10px; }
+.logoOnLight, .logoOnDark { display: grid; min-height: 150px; align-content: space-between; gap: 20px; padding: 18px; border-radius: 8px; }
+.logoOnLight > span, .logoOnDark > span { font-size: 8px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.logoOnLight { border: 1px solid var(--line); background: white; color: #5d5365; }
+.logoOnLight img, .logoOnDark img { display: block; width: 100%; max-width: 390px; height: auto; justify-self: center; }
+.logoOnDark { background: #21192b; color: #e5d7fb; }
+.palette { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin-top: 4px; }
+.palette > div { display: grid; gap: 6px; min-width: 0; }
+.palette > div > span { height: 45px; border: 1px solid rgba(57,35,79,.09); border-radius: 5px; }
+.swatchViolet { background: #8657d8; }
+.swatchLilac { background: #b779e2; }
+.swatchPaper { background: #faf8fc; }
+.palette b { overflow: hidden; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.palette code { color: #73677d; font: 8px/1.4 var(--font-inter, 'Inter', sans-serif); }
+.valuesSection { display: grid; gap: 24px; padding-block: 48px 56px; border-top: 1px solid var(--line); background: var(--paper); }
+.values { display: grid; gap: 10px; }
+.values article { padding: 18px; border-left: 2px solid var(--violet); background: #f1ebf8; }
+.values article svg { color: #7043bc; }
+.values h3 { margin-top: 8px; font: 400 25px/1.2 var(--font-inter, 'Inter', sans-serif); }
+.values p { margin-top: 5px !important; color: #5d5365; font-size: 11px; }
+.closing { padding: 44px 20px; margin-inline: -20px; background: #eee5f8; text-align: center; }
+.closingLabel { color: #654792; font-size: 8px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.closing h2 { margin-top: 15px; font: 400 clamp(38px,6vw,62px)/1.03 var(--font-inter, 'Inter', sans-serif); letter-spacing: -.025em; }
+.closing > a { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; margin-top: 15px; color: #523188; font-size: 10px; font-weight: 700; }
+@media (min-width: 720px) {
+  .headerInner { padding-inline: 48px; }
+  .logo { width: 160px; }
+  .main { padding-inline: 48px; }
+  .hero { grid-template-columns: minmax(0,1fr) minmax(360px,.85fr); gap: 56px; min-height: 470px; padding: 56px 42px; margin-inline: 0; border-radius: 10px; }
+  .logoStage { padding: 24px; }
+  .logoCard { min-height: 190px; padding: 28px; }
+  .brandIdea { grid-template-columns: .55fr 1.45fr; gap: 54px; padding-block: 78px; }
+  .sectionLabel { padding-top: 6px; }
+  .brandIdea p:not(:first-child) { font-size: 13px; }
+  .nameSection { grid-template-columns: minmax(220px,.7fr) minmax(0,1.3fr); gap: 50px; padding-block: 72px; }
+  .nameGrid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; align-self: end; }
+  .nameCard { min-height: 245px; padding: 18px; }
+  .identity { grid-template-columns: minmax(220px,.7fr) minmax(0,1.3fr); gap: 50px; padding-block: 38px 72px; }
+  .identityHead { padding-top: 18px; }
+  .identityVisual { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .logoOnLight, .logoOnDark { min-height: 178px; padding: 20px; }
+  .palette { grid-column: 1 / -1; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin-top: 8px; }
+  .palette > div > span { height: 55px; }
+  .valuesSection { grid-template-columns: minmax(220px,.7fr) minmax(0,1.3fr); gap: 50px; padding-block: 62px 72px; }
+  .values { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; align-self: end; }
+  .values article { min-height: 140px; padding: 18px; }
+  .closing { padding: 60px 32px; margin-inline: 0; border-radius: 10px; }
+}
+@media (prefers-reduced-motion: no-preference) { .nameCard, .values article, .logoCard { transition: transform .2s ease, box-shadow .2s ease; } .nameCard:hover, .values article:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(54,35,69,.07); } }
+@media (prefers-reduced-motion: reduce) { .nameCard, .values article, .logoCard { transition: none; } }

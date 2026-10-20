@@ -1,0 +1,70 @@
+{
+  "planHash": "b0fa159fdcd190ed1f0e69797e2233a5155fe5e7ada98ea2ad4266f509be9093",
+  "phase": "baseline",
+  "recordedAtUtc": "2026-10-09T05:48:16.3777154Z",
+  "retryCount": 0,
+  "resetBaseline": true,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "next-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 1,
+        "outputSample": "\r\n\u003E frontend@0.1.0 build\r\n\u003E next build\r\n\r\n  \u25B2 Next.js 14.2.35\r\n  - Environments: .env.local\r\n\r\n   Creating an optimized production build ...\r\nFailed to compile.\r\n\r\nError: EISDIR: illegal operation on a directory, readlink \u0027E:\\ContentForge\\frontend\\node_modules\\next\\dist\\pages\\_app.js\u0027\r\n\r\n\r\n\u003E Build failed because of webpack errors\r\n",
+        "durationMs": 8288
+      },
+      {
+        "name": "home-route-serves",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022en\u0022 class=\u0022font-sans\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 href=\u0022/cubeforgelabs_logo_main.png\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 href=\u0022/profile.png\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022image\u0022 href=\u0022/cubeforgelabs_logo_darkmode.png\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/css/app/layout.css?v=1791524895997\u0022 data-precedence=\u0022next_static/css/app/layout.css\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022script\u0022 fetchPriority=\u0022low\u0022 href=\u0022/_next/static/chunks/webpack.js?v=1791524895997\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/main-app.js?v=1791524895997\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app-pages-internals.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/page.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/app/layout.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Clink rel=\u0022preconnect\u0022 href=\u0022https://fonts.googleapis.com\u0022/\u003E\u003Clink rel=\u0022preconnect\u0022 href=\u0022https://fonts.gstatic.com\u0022 crossorigin=\u0022anonymous\u0022/\u003E\u003Ctitle\u003ECubeForgeLabs \u2014 AI content, crafted.\u003C/title\u003E\u003Cmeta name=\u0022description\u0022 content=\u0022CubeForgeLabs is the unified AI content platform for ideation, drafting, and publishing across every channel.\u0022/\u003E\u003Clink rel=\u0022icon\u0022 href=\u0022/icon.png?87ea2def9abe7525\u0022 type=\u0022image/png\u0022 sizes=\u00221024x1024\u0022/\u003E\u003Clink href=\u0022https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800\u0026amp;family=Space\u002BGrotesk:wght@500;600;700\u0026amp;display=swap\u0022 rel=\u0022stylesheet\u0022/\u003E\u003Cscript\u003E\n              window.addEventListener(\u0027error\u0027, function(e) {\n                if (e \u0026\u0026 e.message \u0026\u0026 (e.message.indexOf(\u0027ChunkLoadError\u0027) !== -1 || e.message.indexOf(\u0027Loading chunk\u0027) !== -1)) {\n                  console.warn(\u0027ChunkLoadError detected, automatically reloading page to fetch latest chunks...\u0027);\n                  window.location.reload();\n                }\n              });\n            \u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/polyfills.js\u0022 noModule=\u0022\u0022\u003E\u003C/script\u003E\u003C/head\u003E\u003Cbody\u003E\u003Cdiv class=\u0022bg-white text-black min-h-screen relative\u0022\u003E\u003Cdiv style=\u0022font-family:\u0026#x27;Inter\u0026#x27;, sans-serif\u0022 class=\u0022bg-white min-h-screen relative\u0022\u003E\u003Cdiv class=\u0022absolute inset-0 z-0 pointer-events-none w-full h-full overflow-hidden\u0022\u003E\u003Ccanvas id=\u0022fluid\u0022 class=\u0022w-full h-full block\u0022\u003E\u003C/canvas\u003E\u003C/div\u003E\u003Cstyle\u003E\n        @keyframes fadeInUp {\n          from { opacity: 0; transform: translateY(30px); }\n          to { opacity: 1; transform: translateY(0); }\n        }\n        .animate-fade-in-up {\n          animation: fadeInUp 0.6s ease-out forwards;\n        }\n\n        @keyframes fadeInOverlay {\n          from { opacity: 0; }\n          to { opacity: 1; }\n        }\n        .animate-fade-in-overlay {\n          animation: fadeInOverlay 0.4s ease-out forwards;\n        }\n\n        @keyframes fadeInDialog {\n          from { opacity: 0; }\n          to { opacity: 1; }\n        }\n        .animate-slide-up-overlay {\n          animation: fadeInDialog 0.5s ease-out forwards;\n          transform: translate(-50%, -50%);\n        }\n      \u003C/style\u003E\u003Cnav class=\u0022px-6 py-5 flex items-center justify-between max-w-7xl mx-auto relative z-50 animate-fade-in-up\u0022 style=\u0022opacity:0;animation-delay:0.1s\u0022\u003E\u003Ca class=\u0022flex items-center hover:opacity-90 transition\u0022 href=\u0022/\u0022\u003E\u003Cimg src=\u0022/cubeforgelabs_logo_main.png\u0022 alt=\u0022CubeForgeLabs Logo\u0022 class=\u0022h-[1.2em] w-auto object-contain text-[28px]\u0022/\u003E\u003C/a\u003E\u003Cdiv class=\u0022hidden md:flex items-center gap-8\u0022\u003E\u003Cdiv class=\u0022relative py-2\u0022\u003E\u003Cbutton class=\u0022flex items-center gap-1 text-sm transition text-gray-700 hover:text-black\u0022\u003EProduct\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u002214\u0022 height=\u002214\u0022 viewBox=\u00220 0 24 24\u0022 fill=\u0022none\u0022 stroke=\u0022currentColor\u0022 stroke-width=\u00222\u0022 stroke-linecap=\u0022round\u0022 stroke-linejoin=\u0022round\u0022 class=\u0022lucide lucide-chevron-down text-black/40\u0022 aria-hidden=\u0022true\u0022\u003E\u003Cpath d=\u0022m6 9 6 6 6-6\u0022\u003E\u003C/path\u003E\u003C/svg\u003E\u003C/button\u003E\u003C/div\u003E\u003Cdiv class=\u0022relative py-2\u0022\u003E\u003Cbutton class=\u0022flex items-center gap-1 text-sm transition text-gray-700 hover:text-black\u0022\u003EAgents\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u002214\u0022 height=\u002214\u0022 viewBox=\u00220 0 24 24\u0022 fill=\u0022none\u0022 stroke=\u0022currentColor\u0022 stroke-width=\u00222\u0022 stroke-linecap=\u0022round\u0022 stroke-linejoin=\u0022roun\n\u2026[truncated]",
+        "durationMs": 13469
+      }
+    ],
+    "executions": [
+      {
+        "source": "next-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "E:\\ContentForge\\frontend",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "home-route-serves",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "dev",
+          "--",
+          "--hostname",
+          "127.0.0.1",
+          "--port",
+          "3000"
+        ],
+        "cwd": "E:\\ContentForge\\frontend",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}
